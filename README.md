@@ -44,3 +44,49 @@ To use the pipeline, follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## References
+
+1. **FastQC:**
+   - Citation: 
+     - "FastQC: A quality control tool for high throughput sequence data." 
+     - Simon Andrews. 2010. 
+     - [https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+   - If you're using a specific version, you may want to include the version number in your citation.
+
+2. **MultiQC:**
+   - Citation:
+     - "MultiQC: Summarize analysis results for multiple tools and samples in a single report." 
+     - Philip Ewels, Måns Magnusson, Sverker Lundin, and Max Käller.
+     - Bioinformatics, Volume 32, Issue 19, 1 October 2016, Pages 3047–3048.
+     - [https://academic.oup.com/bioinformatics/article/32/19/3047/2196506](https://academic.oup.com/bioinformatics/article/32/19/3047/2196506)
+
+3. **BWA (Burrows-Wheeler Aligner):**
+   - Citation:
+     - "Fast and accurate short read alignment with Burrows-Wheeler Transform." 
+     - Heng Li and Richard Durbin.
+     - Bioinformatics, Volume 25, Issue 14, 15 July 2009, Pages 1754–1760.
+     - [http://bio-bwa.sourceforge.net/](http://bio-bwa.sourceforge.net/)
+
+4. **GATK (Genome Analysis Toolkit):**
+   - Citation:
+     - "The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data." 
+     - McKenna A, Hanna M, Banks E, et al.
+     - Genome Research, Volume 20, Issue 9, September 2010, Pages 1297-1303.
+     - [https://gatk.broadinstitute.org/](https://gatk.broadinstitute.org/)
+
+5. **VEP (Variant Effect Predictor):**
+   - Citation:
+     - "Ensembl variant effect predictor." 
+     - McLaren W, Gil L, Hunt SE, et al.
+     - Bioinformatics, Volume 26, Issue 16, 15 August 2010, Pages 2069–2070.
+     - [https://www.ensembl.org/info/docs/tools/vep/index.html](https://www.ensembl.org/info/docs/tools/vep/index.html)
+
+6. **ANNOVAR:**
+   - Citation:
+     - "ANNOVAR: Functional annotation of genetic variants from high-throughput sequencing data." 
+     - Wang K, Li M, Hakonarson H.
+     - Nucleic Acids Research, Volume 38, Issue 16, 1 August 2010, Page e164.
+     - [https://annovar.openbioinformatics.org/en/latest/](https://annovar.openbioinformatics.org/en/latest/)
+
+These citations provide the necessary information to properly credit the developers and acknowledge the use of these software packages in your work. Make sure to adjust the citation format according to the style guidelines of your publication or organization if needed.
