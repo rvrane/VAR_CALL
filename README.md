@@ -52,7 +52,6 @@ This project is licensed under the [MIT License](LICENSE).
      - "FastQC: A quality control tool for high throughput sequence data." 
      - Simon Andrews. 2010. 
      - [https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-   - If you're using a specific version, you may want to include the version number in your citation.
 
 2. **MultiQC:**
    - Citation:
@@ -88,5 +87,3 @@ This project is licensed under the [MIT License](LICENSE).
      - Wang K, Li M, Hakonarson H.
      - Nucleic Acids Research, Volume 38, Issue 16, 1 August 2010, Page e164.
      - [https://annovar.openbioinformatics.org/en/latest/](https://annovar.openbioinformatics.org/en/latest/)
-
-These citations provide the necessary information to properly credit the developers and acknowledge the use of these software packages in your work. Make sure to adjust the citation format according to the style guidelines of your publication or organization if needed.
