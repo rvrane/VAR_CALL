@@ -16,7 +16,23 @@ The variant calling pipeline consists of the following steps:
 7. **Annotate variants with VEP:** Annotates variants with VEP (Variant Effect Predictor).
 8. **Further annotation with ANNOVAR (optional):** Optionally annotates variants with ANNOVAR.
 
-## Usage
+## Individual Script Descriptions:
+### 1. `qc.sh`
+   - Performs quality control (QC) analysis on raw sequencing data using FastQC and MultiQC.
+   
+### 2. `align.sh`
+   - Aligns sequencing reads to the reference genome using BWA.
+
+### 3. `process_reads.sh`
+   - Preprocesses aligned reads, including sorting, deduplication, and quality filtering.
+
+### 4. `calling.sh`
+   - Calls variants using GATK HaplotypeCaller.
+
+### 5. `annotate.sh`
+   - Annotates variants using VEP (Variant Effect Predictor) and ANNOVAR.
+
+### 6. 'variant_calling.sh'
 
 To use the pipeline, follow these steps:
 
