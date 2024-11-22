@@ -11,20 +11,42 @@
 module load BWA
 
 # Define variables
-REF_GENOME="path/to/reference/genome.fa"
-FASTQ1="path/to/sample_R1.fastq.gz"
-FASTQ2="path/to/sample_R2.fastq.gz"
-BWA_INDEX="path/to/bwa/index"
-OUT_DIR="path/to/output/directory"
+REF_GENOME="/path/to/reference/genome.fa"
+FASTQ1="/path/to/sample_R1.fastq.gz"
+FASTQ2="/path/to/sample_R2.fastq.gz"
+BWA_INDEX="/path/to/bwa/index"
+OUT_DIR="/path/to/output/directory"
 SAMPLE_NAME="sample_name"
 
-# Align reads to the reference genome with BWA
-bwa mem -t 4 $BWA_INDEX $FASTQ1 $FASTQ2 > $OUT_DIR/${SAMPLE_NAME}.sam
-
-# Check for BWA errors
-if [ $? -ne 0 ]; then
-    echo "BWA alignment failed. Exiting."
+# Check if input files exist
+if [ ! -f "$REF_GENOME" ]; then
+    echo "Error: Reference genome file not found"
     exit 1
+fi
+if [ ! -f "$FASTQ1" ]; then
+    echo "Error: FASTQ file 1 not found"
+    exit 1
+fi
+if [ ! -f "$FASTQ2" ]; then
+    echo "Error: FASTQ file 2 not found"
+    exit 1
+fi
+
+# Create output directory if it does not exist
+if [ ! -d "$OUT_DIR" ]; then
+    mkdir -p "$OUT_DIR"
+fi
+
+# Align reads to the reference genome with BWA
+bwa mem -t 4 "$BWA_INDEX" "$FASTQ1" "$FASTQ2" > "$OUT_DIR/${SAMPLE_NAME}.sam"
+
+# Check for BWA errors and warnings
+if [ $? -ne 0 ]; then
+    echo "Error: BWA alignment failed"
+    exit 1
+fi
+if [ -s "$OUT_DIR/${SAMPLE_NAME}.sam" ]; then
+    echo "Warning: BWA produced warnings"
 fi
 
 echo "Alignment step completed successfully."
